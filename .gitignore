@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Kullanilmayan buyuk medya
+public/media/dark-waves.webm
+public/media/ocean-storm.webm
