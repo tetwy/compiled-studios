@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
             <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Unity 6</li>
             <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">PhysX 50Hz</li>
             <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Steamworks</li>
-            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Spatial Acoustics</li>
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">3D Positional Audio</li>
             <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Netcode for GameObjects</li>
           </ul>
         </div>
