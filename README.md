@@ -1,26 +1,26 @@
 ﻿# Compiled Studio
 
-Compiled Studio bağımsız bir oyun stüdyosudur; arkadaşlarla birlikte oynanınca unutulmaz hikayeler çıkaran oyunlar geliştirir. Bu repo stüdyonun resmi tanıtım sitesidir ve ilk oyunu **How to Pirate**'ı tanıtır: 2-4 oyunculu, fizik odaklı bir co-op korsan macerası.
+Compiled Studio is an independent game studio. We make games that turn into unforgettable stories when you play them with friends. This repo is the studio's official website, and it introduces our first game, **How to Pirate**: a physics-driven co-op pirate adventure for 2-4 players.
 
-**Canlı site:** https://compiled-studios.vercel.app
+**Live site:** https://compiled-studios.vercel.app
 
-## Sitede neler var
+## What's on the site
 
-- Tam ekran video arkaplanlı hero ve oyunun tanıtımı
-- Stüdyo hakkında bölümü
-- Oyunun öne çıkan yönleri: 2-4 kişilik ekip uyumu, fizik komedisi, atmosferik korku, topluluk odaklı alpha
-- Oyun akışı: limanda kargo yükle, mürettebatı yönet, tehlikeden kurtul, teslim et ve yeniden donan
-- Rakamlarla oyun ve topluluk bağlantıları (Discord, X, YouTube, Instagram)
+- A full-screen video background hero and an introduction to the game
+- An About the studio section
+- The game's highlights: teamwork for 2-4 players, physics comedy, atmospheric horror, a community-focused alpha
+- The gameplay loop: load cargo at the port, manage the crew, survive the danger, deliver and set sail again
+- The game and community in numbers, plus community links (Discord, X, YouTube, Instagram)
 
-## Teknoloji
+## Tech
 
 - React 19 + TypeScript
 - Vite 6
 - Tailwind CSS 3, tailwindcss-animate
-- Framer Motion, Lucide ikonları
-- Vercel ile yayın (`vercel.json`)
+- Framer Motion, Lucide icons
+- Deployed on Vercel (`vercel.json`)
 
-## Kurulum
+## Setup
 
 ```bash
 git clone https://github.com/tetwy/compiled-studios.git
@@ -29,7 +29,7 @@ npm install
 npm run dev
 ```
 
-Üretim derlemesi için:
+For a production build:
 
 ```bash
 npm run build
