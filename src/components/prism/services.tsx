@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ThreeStage } from '@/components/three';
 
 export const Services: React.FC = () => {
   return (
@@ -35,12 +36,14 @@ export const Services: React.FC = () => {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(56,189,248,0.06),transparent_70%)] pointer-events-none" />
 
               {/* Viewfinder crosshairs */}
-              <div className="absolute top-4 left-4 size-4 border-t-2 border-l-2 border-white/20" />
-              <div className="absolute top-4 right-4 size-4 border-t-2 border-r-2 border-white/20" />
-              <div className="absolute bottom-14 left-4 size-4 border-b-2 border-l-2 border-white/20" />
-              <div className="absolute bottom-14 right-4 size-4 border-b-2 border-r-2 border-white/20" />
+              <div className="absolute top-4 left-4 size-4 border-t-2 border-l-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute top-4 right-4 size-4 border-t-2 border-r-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute bottom-14 left-4 size-4 border-b-2 border-l-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute bottom-14 right-4 size-4 border-b-2 border-r-2 border-white/20 z-20 pointer-events-none" />
 
-              {/* Center Placeholder Badge */}
+              <ThreeStage
+                scene="cannon"
+                fallback={
               <div className="relative z-10 flex flex-col items-center gap-3 p-6 text-center">
                 <div className="size-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-foreground/40 group-hover:text-foreground/70 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="size-6">
@@ -57,9 +60,11 @@ export const Services: React.FC = () => {
                   <p className="text-xs text-foreground/30 mt-1">Physics & Ship Buoyancy Capture</p>
                 </div>
               </div>
+                }
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-foreground/80 font-mono z-20">
+              <div className="absolute bottom-4 left-4 right-4 hidden sm:flex items-center justify-between text-xs text-foreground/80 font-mono z-20 pointer-events-none">
                 <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">Simulated 50 Hz PhysX</span>
                 <span className="text-foreground/50">Rigid Body & Buoyancy</span>
               </div>
@@ -93,12 +98,14 @@ export const Services: React.FC = () => {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(168,85,247,0.06),transparent_70%)] pointer-events-none" />
 
               {/* Viewfinder crosshairs */}
-              <div className="absolute top-4 left-4 size-4 border-t-2 border-l-2 border-white/20" />
-              <div className="absolute top-4 right-4 size-4 border-t-2 border-r-2 border-white/20" />
-              <div className="absolute bottom-14 left-4 size-4 border-b-2 border-l-2 border-white/20" />
-              <div className="absolute bottom-14 right-4 size-4 border-b-2 border-r-2 border-white/20" />
+              <div className="absolute top-4 left-4 size-4 border-t-2 border-l-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute top-4 right-4 size-4 border-t-2 border-r-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute bottom-14 left-4 size-4 border-b-2 border-l-2 border-white/20 z-20 pointer-events-none" />
+              <div className="absolute bottom-14 right-4 size-4 border-b-2 border-r-2 border-white/20 z-20 pointer-events-none" />
 
-              {/* Center Placeholder Badge */}
+              <ThreeStage
+                scene="crew"
+                fallback={
               <div className="relative z-10 flex flex-col items-center gap-3 p-6 text-center">
                 <div className="size-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-foreground/40 group-hover:text-foreground/70 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="size-6">
@@ -115,9 +122,11 @@ export const Services: React.FC = () => {
                   <p className="text-xs text-foreground/30 mt-1">Multi-Crew Cooperative Gameplay</p>
                 </div>
               </div>
+                }
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-foreground/80 font-mono z-20">
+              <div className="absolute bottom-4 left-4 right-4 hidden sm:flex items-center justify-between text-xs text-foreground/80 font-mono z-20 pointer-events-none">
                 <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">2–4 Player Multi-Station</span>
                 <span className="text-foreground/50">Emergent Physics Comedy</span>
               </div>
