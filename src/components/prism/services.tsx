@@ -26,14 +26,6 @@ export const Services: React.FC = () => {
               <p className="mt-5 max-w-md text-sm leading-relaxed font-light text-foreground/70">
                 No fake static animations. When your galleon lists against a surging rogue wave, loose cargo slides across the deck, cannons roll backward from recoil, and your clumsy crewmate might just trip overboard into the dark waters.
               </p>
-              <a
-                href="#voyage"
-                data-slot="glass-button"
-                className="liquid-glass-strong inline-flex shrink-0 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:bg-white/10 mt-8"
-              >
-                <span>Read Physics Devlog</span>
-                <ArrowUpRight className="size-4" />
-              </a>
             </div>
 
             {/* Gameplay Capture Placeholder 1 */}
@@ -68,7 +60,7 @@ export const Services: React.FC = () => {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-foreground/80 font-mono z-20">
-                <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">Simulated 60 Hz PhysX</span>
+                <span className="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">Simulated 50 Hz PhysX</span>
                 <span className="text-foreground/50">Rigid Body & Buoyancy</span>
               </div>
             </div>

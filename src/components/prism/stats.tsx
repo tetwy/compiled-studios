@@ -8,7 +8,7 @@ export const Stats: React.FC = () => {
       label: 'PhysX Simulation Rate',
       value: (
         <span>
-          60<span className="text-lg md:text-2xl font-normal opacity-65 ml-1 tracking-normal">Hz</span>
+          50<span className="text-lg md:text-2xl font-normal opacity-65 ml-1 tracking-normal">Hz</span>
         </span>
       ),
     },
@@ -32,7 +32,7 @@ export const Stats: React.FC = () => {
       <motion.img
         animate={{ y: [0, 16, 0], rotate: [0, 4, 0] }}
         transition={{ duration: 7.5, repeat: Infinity, ease: 'easeInOut' }}
-        src="/assets/3d/neon-trophy.png"
+        src="/assets/3d/neon-trophy.webp"
         alt="3D Neon Gaming Trophy"
         className="absolute -left-10 -bottom-10 size-72 sm:size-84 opacity-25 filter drop-shadow-[0_0_40px_rgba(245,158,11,0.3)] pointer-events-none select-none"
       />

@@ -10,14 +10,14 @@ export const Cta: React.FC = () => {
       <motion.img
         animate={{ y: [0, -14, 0], rotate: [-2, 3, -2] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-        src="/assets/3d/neon-gamepad.png"
+        src="/assets/3d/neon-gamepad.webp"
         alt="3D Neon Gamepad"
         className="absolute -left-12 top-1/4 size-72 sm:size-88 opacity-30 filter drop-shadow-[0_0_40px_rgba(168,85,247,0.35)] pointer-events-none select-none"
       />
       <motion.img
         animate={{ y: [0, 16, 0], rotate: [0, -4, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-        src="/assets/3d/neon-joystick.png"
+        src="/assets/3d/neon-joystick.webp"
         alt="3D Neon Gaming Cursor & Joystick"
         className="absolute -right-12 bottom-12 size-64 sm:size-80 opacity-30 filter drop-shadow-[0_0_40px_rgba(56,189,248,0.35)] pointer-events-none select-none"
       />
@@ -94,9 +94,7 @@ export const Cta: React.FC = () => {
             <a href="https://www.instagram.com/compiledstudios/" target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">
               Instagram
             </a>
-            <a href="https://store.steampowered.com" target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">
-              Steam
-            </a>
+            <span className="cursor-default select-none text-foreground/30">Steam (soon)</span>
           </nav>
         </footer>
       </div>

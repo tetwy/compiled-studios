@@ -1,21 +1,36 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
+import { useReducedMotion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
+  const reduceMotion = useReducedMotion();
   return (
     <section id="home" data-slot="hero" className="relative flex min-h-svh flex-col overflow-hidden">
       {/* Background Video (Muted, Direct Play, Watermark Cropped) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          className="h-full w-full object-cover scale-[1.12] origin-center"
-          src="/media/hero-kling.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-hidden="true"
-          tabIndex={-1}
-        />
+        {reduceMotion ? (
+          <img
+            className="h-full w-full object-cover scale-[1.12] origin-center"
+            src="/media/hero-poster.webp"
+            alt=""
+            aria-hidden="true"
+          />
+        ) : (
+          <video
+            className="h-full w-full object-cover scale-[1.12] origin-center"
+            poster="/media/hero-poster.webp"
+            preload="metadata"
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
+            tabIndex={-1}
+          >
+            <source src="/media/hero-kling.webm" type="video/webm" />
+            <source src="/media/hero-kling.mp4" type="video/mp4" />
+          </video>
+        )}
       </div>
 
       {/* Dark gradient vignette & masks */}
@@ -35,7 +50,7 @@ export const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-1 flex-col items-center px-6 pt-36 text-center md:pt-44">
         {/* Game Title Headline */}
-        <h1 className="mt-6 max-w-5xl font-game text-4xl leading-[1.15] tracking-[0.08em] uppercase font-black text-foreground drop-shadow-[0_4px_28px_rgba(0,0,0,0.95)] md:text-6xl lg:text-[4.75rem]">
+        <h1 className="mt-6 max-w-5xl font-game text-[1.55rem] leading-[1.15] tracking-[0.04em] min-[420px]:text-3xl sm:text-4xl sm:tracking-[0.08em] uppercase font-black text-foreground drop-shadow-[0_4px_28px_rgba(0,0,0,0.95)] md:text-6xl lg:text-[4.75rem]">
           <span dir="auto" className="inline-flex flex-wrap justify-center gap-x-[0.3em]">
             <span className="word-rise" style={{ animationDelay: '0ms' }}>Unforgettable</span>
             <span className="word-rise" style={{ animationDelay: '100ms' }}>Stories</span>
@@ -52,6 +67,16 @@ export const Hero: React.FC = () => {
 
         {/* Action Button */}
         <div className="rise mt-8 flex flex-wrap items-center justify-center gap-4 [animation-delay:1.1s]">
+          <a
+            href="https://discord.gg/553fnf7UqW"
+            target="_blank"
+            rel="noreferrer"
+            data-slot="glass-button"
+            className="liquid-glass-strong inline-flex shrink-0 items-center justify-center gap-2.5 rounded-full px-7 py-3 text-sm font-semibold tracking-wider uppercase text-foreground transition-all hover:bg-white/10 hover:scale-105 active:scale-95"
+          >
+            <MessageSquare className="size-4" />
+            <span>Join Alpha Discord</span>
+          </a>
           <button
             type="button"
             disabled
@@ -63,13 +88,13 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Tech & Platform bar */}
-        <div data-slot="partners" className="rise mt-auto flex flex-col items-center gap-4 pt-16 pb-8">
-          <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
-            <li className="font-serif text-2xl tracking-tight text-foreground/90 italic md:text-3xl">Unreal Engine 5</li>
-            <li className="font-serif text-2xl tracking-tight text-foreground/90 italic md:text-3xl">PhysX 60Hz</li>
-            <li className="font-serif text-2xl tracking-tight text-foreground/90 italic md:text-3xl">Steamworks</li>
-            <li className="font-serif text-2xl tracking-tight text-foreground/90 italic md:text-3xl">Spatial Acoustics</li>
-            <li className="font-serif text-2xl tracking-tight text-foreground/90 italic md:text-3xl">Rollback Netcode</li>
+        <div data-slot="partners" className="rise mt-auto flex w-full flex-col items-center gap-4 pt-16 pb-8">
+          <ul className="flex w-full flex-nowrap items-center gap-x-8 overflow-x-auto px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap sm:justify-center sm:gap-x-10 sm:gap-y-3 sm:overflow-visible">
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Unity 6</li>
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">PhysX 50Hz</li>
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Steamworks</li>
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Spatial Acoustics</li>
+            <li className="shrink-0 whitespace-nowrap font-serif text-lg tracking-tight text-foreground/90 italic sm:text-2xl md:text-3xl">Netcode for GameObjects</li>
           </ul>
         </div>
       </div>

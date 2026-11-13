@@ -1,4 +1,5 @@
 import React from 'react';
+import { MotionConfig } from 'framer-motion';
 import { Navbar } from './navbar';
 import { Hero } from './hero';
 import { Process } from './process';
@@ -10,6 +11,7 @@ import { Cta } from './cta';
 
 export const PrismLayout: React.FC = () => {
   return (
+    <MotionConfig reducedMotion="user">
     <div className="prism relative min-h-svh bg-black text-foreground antialiased overflow-x-hidden selection:bg-white/25 selection:text-white">
       <Navbar />
       <main>
@@ -22,6 +24,7 @@ export const PrismLayout: React.FC = () => {
         <Cta />
       </main>
     </div>
+    </MotionConfig>
   );
 };
 

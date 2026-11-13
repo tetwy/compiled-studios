@@ -36,7 +36,7 @@ export const Benefits: React.FC = () => {
       <motion.img
         animate={{ y: [0, -18, 0], rotate: [-4, 6, -4] }}
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-        src="/assets/3d/neon-dice.png"
+        src="/assets/3d/neon-dice.webp"
         alt="3D Neon Gaming Dice"
         className="absolute -right-16 top-6 size-80 sm:size-96 opacity-25 filter drop-shadow-[0_0_45px_rgba(168,85,247,0.35)] pointer-events-none select-none"
       />

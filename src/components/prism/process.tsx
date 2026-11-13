@@ -40,14 +40,14 @@ export const Process: React.FC = () => {
           rotate: { duration: 70, repeat: Infinity, ease: 'linear' },
           y: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
         }}
-        src="/assets/3d/neon-helm.png"
+        src="/assets/3d/neon-helm.webp"
         alt="3D Neon Helm"
         className="absolute -right-20 top-1/4 size-80 sm:size-96 opacity-30 filter drop-shadow-[0_0_40px_rgba(217,70,239,0.35)] pointer-events-none select-none"
       />
       <motion.img
         animate={{ y: [0, 16, 0], rotate: [0, 5, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        src="/assets/3d/neon-joystick.png"
+        src="/assets/3d/neon-joystick.webp"
         alt="3D Neon Gaming Cursor & Joystick"
         className="absolute -left-16 bottom-16 size-72 sm:size-84 opacity-30 filter drop-shadow-[0_0_40px_rgba(56,189,248,0.35)] pointer-events-none select-none"
       />
@@ -94,7 +94,7 @@ export const Process: React.FC = () => {
         </div>
 
         <a
-          href="https://store.steampowered.com"
+          href="https://discord.gg/553fnf7UqW"
           target="_blank"
           rel="noreferrer"
           data-slot="glass-button"
